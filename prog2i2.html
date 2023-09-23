@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proj23.css">
+</head>
+<body>
+    <section id="home">
+        <h1 id="head">Welcome to Dine In Restaurant</h1>
+        <div class="para">
+            <p>Your login time: </p>
+        </div>
+        <div id="dat" class="para">
+            <!-- Initialize with some default content -->
+            Loading...
+        </div>
+        <script>
+            // Move the script after the "dat" element
+            var a = document.getElementById("dat");
+            var da = new Date();
+            a.innerHTML = da.toLocaleString();
+        </script>
+        <!-- <button class="btn">Order Now</button> -->
+    </section>
+</body>
+</html>
